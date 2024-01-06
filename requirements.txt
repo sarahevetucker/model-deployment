@@ -16,7 +16,7 @@ conda-package-handling @ file:///croot/conda-package-handling_1690999929514/work
 conda_package_streaming @ file:///croot/conda-package-streaming_1690987966409/work
 cryptography==41.0.4
 distro @ file:///croot/distro_1701455004953/work
-Flask==3.0.0
+Flask==2.1.0
 flatbuffers==23.5.26
 gast==0.5.4
 google-auth==2.26.1
