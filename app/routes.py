@@ -7,8 +7,8 @@ from tensorflow.keras.models import load_model
 bp = Blueprint('routes', __name__)
 
 # Load the pre-trained model and weights
-model = load_model('/workspaces/model-deployment/model-deployment/complete_model.h5')
-model.load_weights('/workspaces/model-deployment/model-deployment/model_weights.h5')
+model = load_model('complete_model.h5')
+model.load_weights('model_weights.h5')
 
 # Define routes
 @bp.route('/')

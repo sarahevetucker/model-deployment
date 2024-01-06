@@ -1,24 +1,16 @@
-# app.py
+# app/routes.py
+from flask import Blueprint, render_template, request, jsonify
 import numpy as np
 from tensorflow.keras.models import load_model
-from flask import render_template, request, jsonify
 
-# Load the pre-trained model and weights
-model = load_model('/workspaces/model-deployment/complete_model.h5')
-model.load_weights('/workspaces/model-deployment/model_weights.h5')
-
-from app import create_app  # Import create_app function
-
-app = create_app()  # Create Flask app instance
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-# app/routes.py
-from flask import Blueprint
-
+# Create a Blueprint
 bp = Blueprint('routes', __name__)
 
+# Load the pre-trained model and weights
+model = load_model('complete_model.h5')
+model.load_weights('model_weights.h5')
+
+# Define routes
 @bp.route('/')
 def index():
     return render_template('index.html')
@@ -40,3 +32,13 @@ def predict():
 
     except Exception as e:
         return jsonify({'error': str(e)})
+# app.py
+from flask import Flask
+from app.routes import bp
+
+app = Flask(__name__)
+app.register_blueprint(bp)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
