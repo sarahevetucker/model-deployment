@@ -10,7 +10,7 @@ certifi @ file:///croot/certifi_1700501669400/work/certifi
 cffi @ file:///croot/cffi_1700254295673/work
 charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
 click==8.1.7
-conda @ file:///croot/conda_1701719518285/work
+conda==23.11.0
 conda-libmamba-solver @ file:///croot/conda-libmamba-solver_1700150901600/work/src
 conda-package-handling @ file:///croot/conda-package-handling_1690999929514/work
 conda_package_streaming @ file:///croot/conda-package-streaming_1690987966409/work
@@ -28,7 +28,7 @@ h5py==3.10.0
 idna @ file:///work/ci_py311/idna_1676822698822/work
 itsdangerous==2.1.2
 Jinja2==3.1.2
-jsonpatch @ file:///tmp/build/80754af9/jsonpatch_1615747632069/work
+jsonpatch==1.32
 jsonpointer==2.1
 keras==2.15.0
 libclang==16.0.6
@@ -60,7 +60,7 @@ tensorboard-data-server==0.7.2
 tensorflow==2.15.0.post1
 tensorflow-estimator==2.15.0
 tensorflow-io-gcs-filesystem==0.35.0
-tensorflow==2.7.0
+tensorflow==3.2.2
 termcolor==2.4.0
 tqdm @ file:///croot/tqdm_1679561862951/work
 truststore @ file:///croot/truststore_1695244293384/work
