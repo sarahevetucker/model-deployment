@@ -1,7 +1,6 @@
-from flask import Flask, request, jsonify
+from flask import Flask, render_template, request, jsonify
 from tensorflow.keras.models import load_model
 import numpy as np
-
 app = Flask(__name__)
 
 # Load your trained model
@@ -28,6 +27,10 @@ def preprocess_data(features):
     # Make sure to format the input data in the same way it was during training
     processed_features = features  # Replace with your actual preprocessing logic
     return processed_features
+
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def make_prediction():

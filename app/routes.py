@@ -4,9 +4,6 @@ from tensorflow.keras.models import load_model
 
 bp = Blueprint('routes', __name__)
 
-model = load_model('complete_model.h5')
-model.load_weights('model_weights.h5')
-
 @bp.route('/')
 def index():
     return render_template('index.html')
