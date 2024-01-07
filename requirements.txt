@@ -41,7 +41,6 @@ numpy==1.19.5
 oauthlib==3.2.2
 opt-einsum==3.3.0
 packaging @ file:///croot/packaging_1693575174725/work
-package1==1.0.0
 package2>=2.1.0
 platformdirs @ file:///croot/platformdirs_1692205439124/work
 pluggy @ file:///work/ci_py311/pluggy_1676822818071/work
