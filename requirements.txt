@@ -16,7 +16,7 @@ conda-package-handling @ file:///croot/conda-package-handling_1690999929514/work
 conda_package_streaming @ file:///croot/conda-package-streaming_1690987966409/work
 cryptography==41.0.4
 distro @ file:///croot/distro_1701455004953/work
-Flask==2.1.0
+Flask==3.0
 flatbuffers==23.5.26
 gast==0.5.4
 google-auth==2.26.1
@@ -41,6 +41,8 @@ numpy==1.19.5
 oauthlib==3.2.2
 opt-einsum==3.3.0
 packaging @ file:///croot/packaging_1693575174725/work
+package1==1.0.0
+package2>=2.1.0
 platformdirs @ file:///croot/platformdirs_1692205439124/work
 pluggy @ file:///work/ci_py311/pluggy_1676822818071/work
 protobuf==4.23.4
@@ -51,6 +53,7 @@ pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
 pyOpenSSL @ file:///croot/pyopenssl_1690223430423/work
 PySocks @ file:///work/ci_py311/pysocks_1676822712504/work
 requests @ file:///croot/requests_1690400202158/work
+requests>=2.26.0
 requests-oauthlib==1.3.1
 rsa==4.9
 ruamel.yaml @ file:///work/ci_py311/ruamel.yaml_1676838772170/work
